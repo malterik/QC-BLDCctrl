@@ -1,0 +1,315 @@
+
+QC-BLDCctrl.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000082  00800200  00000200  00000274  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000200  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000002f6  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000080  00000000  00000000  00000326  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000006c9  00000000  00000000  000003a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000399  00000000  00000000  00000a6f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000244  00000000  00000000  00000e08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000000e4  00000000  00000000  0000104c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000266  00000000  00000000  00001130  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000002d5  00000000  00000000  00001396  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000050  00000000  00000000  0000166b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+   8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+   c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  10:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  14:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  18:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  1c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  20:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  24:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  28:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  2c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  30:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  34:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  38:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  3c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  40:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  44:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  48:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  4c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  50:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  54:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  58:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  5c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  60:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  64:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  68:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  6c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  70:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  74:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  78:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  7c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  80:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  84:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  88:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  8c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  90:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  94:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  98:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  9c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  a0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  a4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  a8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  ac:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  b0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  b4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  b8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  bc:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  c0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  c4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  c8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  cc:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  d0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  d4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  d8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  dc:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  e0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+
+000000f0 <__do_copy_data>:
+  f0:	12 e0       	ldi	r17, 0x02	; 2
+  f2:	a0 e0       	ldi	r26, 0x00	; 0
+  f4:	b2 e0       	ldi	r27, 0x02	; 2
+  f6:	e0 e0       	ldi	r30, 0x00	; 0
+  f8:	f2 e0       	ldi	r31, 0x02	; 2
+  fa:	02 c0       	rjmp	.+4      	; 0x100 <__do_copy_data+0x10>
+  fc:	05 90       	lpm	r0, Z+
+  fe:	0d 92       	st	X+, r0
+ 100:	a2 38       	cpi	r26, 0x82	; 130
+ 102:	b1 07       	cpc	r27, r17
+ 104:	d9 f7       	brne	.-10     	; 0xfc <__do_copy_data+0xc>
+ 106:	0e 94 89 00 	call	0x112	; 0x112 <main>
+ 10a:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <_exit>
+
+0000010e <__bad_interrupt>:
+ 10e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000112 <main>:
+#include "pwm.hpp"
+#include "uart.hpp"
+#include <util/delay.h>
+
+int main(void)
+{
+ 112:	cf 93       	push	r28
+ 114:	df 93       	push	r29
+ 116:	00 d0       	rcall	.+0      	; 0x118 <main+0x6>
+ 118:	cd b7       	in	r28, 0x3d	; 61
+ 11a:	de b7       	in	r29, 0x3e	; 62
+	char dutyCycle;
+	UART uart;
+	PWM pwm;
+	uart.uartInit();
+ 11c:	ce 01       	movw	r24, r28
+ 11e:	02 96       	adiw	r24, 0x02	; 2
+ 120:	0e 94 cf 00 	call	0x19e	; 0x19e <_ZN4UART8uartInitEv>
+	uart.println("*** QC-BLCD OS Startup Sequence ***");
+ 124:	60 e0       	ldi	r22, 0x00	; 0
+ 126:	72 e0       	ldi	r23, 0x02	; 2
+ 128:	ce 01       	movw	r24, r28
+ 12a:	02 96       	adiw	r24, 0x02	; 2
+ 12c:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <_ZN4UART7printlnEPc>
+	uart.println(" > UART initialized");
+ 130:	64 e2       	ldi	r22, 0x24	; 36
+ 132:	72 e0       	ldi	r23, 0x02	; 2
+ 134:	ce 01       	movw	r24, r28
+ 136:	02 96       	adiw	r24, 0x02	; 2
+ 138:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <_ZN4UART7printlnEPc>
+	pwm.pwmInit();
+ 13c:	ce 01       	movw	r24, r28
+ 13e:	01 96       	adiw	r24, 0x01	; 1
+ 140:	0e 94 c5 00 	call	0x18a	; 0x18a <_ZN3PWM7pwmInitEv>
+	uart.println(" > PWM initialized");
+ 144:	68 e3       	ldi	r22, 0x38	; 56
+ 146:	72 e0       	ldi	r23, 0x02	; 2
+ 148:	ce 01       	movw	r24, r28
+ 14a:	02 96       	adiw	r24, 0x02	; 2
+ 14c:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <_ZN4UART7printlnEPc>
+
+	uart.println("Startup Sequence successfull!");
+ 150:	6b e4       	ldi	r22, 0x4B	; 75
+ 152:	72 e0       	ldi	r23, 0x02	; 2
+ 154:	ce 01       	movw	r24, r28
+ 156:	02 96       	adiw	r24, 0x02	; 2
+ 158:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <_ZN4UART7printlnEPc>
+	uart.println("Main program starts now");
+ 15c:	69 e6       	ldi	r22, 0x69	; 105
+ 15e:	72 e0       	ldi	r23, 0x02	; 2
+ 160:	ce 01       	movw	r24, r28
+ 162:	02 96       	adiw	r24, 0x02	; 2
+ 164:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <_ZN4UART7printlnEPc>
+	
+	dutyCycle=0;
+ 168:	10 e0       	ldi	r17, 0x00	; 0
+	
+
+    while(42) {                       
+               /*itoa(dutyCycle,msg,10);
+			   println(msg);*/
+			   pwm.setDutyCycle(dutyCycle);
+ 16a:	61 2f       	mov	r22, r17
+ 16c:	ce 01       	movw	r24, r28
+ 16e:	01 96       	adiw	r24, 0x01	; 1
+ 170:	0e 94 cd 00 	call	0x19a	; 0x19a <_ZN3PWM12setDutyCycleEc>
+			   dutyCycle++;
+ 174:	1f 5f       	subi	r17, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 176:	2f ef       	ldi	r18, 0xFF	; 255
+ 178:	83 ec       	ldi	r24, 0xC3	; 195
+ 17a:	99 e0       	ldi	r25, 0x09	; 9
+ 17c:	21 50       	subi	r18, 0x01	; 1
+ 17e:	80 40       	sbci	r24, 0x00	; 0
+ 180:	90 40       	sbci	r25, 0x00	; 0
+ 182:	e1 f7       	brne	.-8      	; 0x17c <main+0x6a>
+ 184:	00 c0       	rjmp	.+0      	; 0x186 <main+0x74>
+ 186:	00 00       	nop
+ 188:	f0 cf       	rjmp	.-32     	; 0x16a <main+0x58>
+
+0000018a <_ZN3PWM7pwmInitEv>:
+
+#include <avr/io.h>
+#include "pwm.hpp"
+
+void PWM::pwmInit(void){
+	DDRB = 0xFF;                      // Set Port PB1 and PB2 as Output
+ 18a:	8f ef       	ldi	r24, 0xFF	; 255
+ 18c:	84 b9       	out	0x04, r24	; 4
+	PORTB=0;
+ 18e:	15 b8       	out	0x05, r1	; 5
+	
+	TCCR0A = (1<<WGM01)|(1<<WGM00)|(1<<COM0A1)   // Set up the two Control registers of Timer1.
+	|(1<<COM1B1);             // Wave Form Generation is Fast PWM 8 Bit,
+ 190:	83 ea       	ldi	r24, 0xA3	; 163
+ 192:	84 bd       	out	0x24, r24	; 36
+	TCCR0B = (1<<CS02)     // OC1A and OC1B are cleared on compare match
+	|(1<<CS00);               // and set at BOTTOM. Clock Prescaler is 1024.
+ 194:	85 e0       	ldi	r24, 0x05	; 5
+ 196:	85 bd       	out	0x25, r24	; 37
+ 198:	08 95       	ret
+
+0000019a <_ZN3PWM12setDutyCycleEc>:
+}
+
+void PWM::setDutyCycle ( char rate) {
+	OCR0A = rate;
+ 19a:	67 bd       	out	0x27, r22	; 39
+ 19c:	08 95       	ret
+
+0000019e <_ZN4UART8uartInitEv>:
+#include <avr\io.h>
+#include "uart.hpp"
+//----------------------------------------------------------------------
+void UART::uartInit(void)
+{
+	UBRR0L = 103; //9600Baud siehe Baudratentabelle
+ 19e:	87 e6       	ldi	r24, 0x67	; 103
+ 1a0:	80 93 c4 00 	sts	0x00C4, r24
+	UCSR0B = (1<<RXEN0)|(1<<TXEN0); //Sender enable UCSRB / UCR bei z.B.: 2313
+ 1a4:	88 e1       	ldi	r24, 0x18	; 24
+ 1a6:	80 93 c1 00 	sts	0x00C1, r24
+	UCSR0C = (1<<USBS0)|(3<<UCSZ00);
+ 1aa:	8e e0       	ldi	r24, 0x0E	; 14
+ 1ac:	80 93 c2 00 	sts	0x00C2, r24
+ 1b0:	08 95       	ret
+
+000001b2 <_ZN4UART11uartPutCharEc>:
+}
+//----------------------------------------------------------------------
+void UART::uartPutChar(char data)
+{
+	//warte bis UDR leer ist UCSR0A / USR bei z.B.: 2313
+	while (!(UCSR0A& (1<<UDRE0)));
+ 1b2:	e0 ec       	ldi	r30, 0xC0	; 192
+ 1b4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b6:	80 81       	ld	r24, Z
+ 1b8:	85 ff       	sbrs	r24, 5
+ 1ba:	fd cf       	rjmp	.-6      	; 0x1b6 <_ZN4UART11uartPutCharEc+0x4>
+	//sende
+	UDR0=data;
+ 1bc:	60 93 c6 00 	sts	0x00C6, r22
+ 1c0:	08 95       	ret
+
+000001c2 <_ZN4UART7printlnEPc>:
+	for (int i=0;buffer[i]!=0;i++)
+	uartPutChar(buffer[i]);
+}
+//======================================================================
+void UART::println(char buffer[])
+{
+ 1c2:	0f 93       	push	r16
+ 1c4:	1f 93       	push	r17
+ 1c6:	cf 93       	push	r28
+ 1c8:	df 93       	push	r29
+ 1ca:	8c 01       	movw	r16, r24
+ 1cc:	eb 01       	movw	r28, r22
+	for (int i=0;buffer[i]!=0;i++)
+ 1ce:	68 81       	ld	r22, Y
+ 1d0:	66 23       	and	r22, r22
+ 1d2:	39 f0       	breq	.+14     	; 0x1e2 <_ZN4UART7printlnEPc+0x20>
+ 1d4:	21 96       	adiw	r28, 0x01	; 1
+	uartPutChar(buffer[i]);
+ 1d6:	c8 01       	movw	r24, r16
+ 1d8:	0e 94 d9 00 	call	0x1b2	; 0x1b2 <_ZN4UART11uartPutCharEc>
+	uartPutChar(buffer[i]);
+}
+//======================================================================
+void UART::println(char buffer[])
+{
+	for (int i=0;buffer[i]!=0;i++)
+ 1dc:	69 91       	ld	r22, Y+
+ 1de:	61 11       	cpse	r22, r1
+ 1e0:	fa cf       	rjmp	.-12     	; 0x1d6 <_ZN4UART7printlnEPc+0x14>
+	uartPutChar(buffer[i]);
+	uartPutChar(0x0D);
+ 1e2:	6d e0       	ldi	r22, 0x0D	; 13
+ 1e4:	c8 01       	movw	r24, r16
+ 1e6:	0e 94 d9 00 	call	0x1b2	; 0x1b2 <_ZN4UART11uartPutCharEc>
+	uartPutChar(0x0A);
+ 1ea:	6a e0       	ldi	r22, 0x0A	; 10
+ 1ec:	c8 01       	movw	r24, r16
+ 1ee:	0e 94 d9 00 	call	0x1b2	; 0x1b2 <_ZN4UART11uartPutCharEc>
+ 1f2:	df 91       	pop	r29
+ 1f4:	cf 91       	pop	r28
+ 1f6:	1f 91       	pop	r17
+ 1f8:	0f 91       	pop	r16
+ 1fa:	08 95       	ret
+
+000001fc <_exit>:
+ 1fc:	f8 94       	cli
+
+000001fe <__stop_program>:
+ 1fe:	ff cf       	rjmp	.-2      	; 0x1fe <__stop_program>
