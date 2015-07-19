@@ -1,0 +1,282 @@
+
+BLDC_ctrl.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000082  00800200  000001c6  0000023a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001c6  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000002bc  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000080  00000000  00000000  000002ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   0000044e  00000000  00000000  0000036c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000302  00000000  00000000  000007ba  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000318  00000000  00000000  00000abc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000000c4  00000000  00000000  00000dd4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000001d6  00000000  00000000  00000e98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    0000017b  00000000  00000000  0000106e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000050  00000000  00000000  000011e9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+   8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+   c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  10:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  14:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  18:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  1c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  20:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  24:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  28:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  2c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  30:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  34:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  38:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  3c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  40:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  44:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  48:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  4c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  50:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  54:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  58:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  5c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  60:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  64:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  68:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  6c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  70:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  74:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  78:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  7c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  80:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  84:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  88:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  8c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  90:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  94:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  98:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  9c:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  a0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  a4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  a8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  ac:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  b0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  b4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  b8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  bc:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  c0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  c4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  c8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  cc:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  d0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  d4:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  d8:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  dc:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+  e0:	0c 94 87 00 	jmp	0x10e	; 0x10e <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+
+000000f0 <__do_copy_data>:
+  f0:	12 e0       	ldi	r17, 0x02	; 2
+  f2:	a0 e0       	ldi	r26, 0x00	; 0
+  f4:	b2 e0       	ldi	r27, 0x02	; 2
+  f6:	e6 ec       	ldi	r30, 0xC6	; 198
+  f8:	f1 e0       	ldi	r31, 0x01	; 1
+  fa:	02 c0       	rjmp	.+4      	; 0x100 <__do_copy_data+0x10>
+  fc:	05 90       	lpm	r0, Z+
+  fe:	0d 92       	st	X+, r0
+ 100:	a2 38       	cpi	r26, 0x82	; 130
+ 102:	b1 07       	cpc	r27, r17
+ 104:	d9 f7       	brne	.-10     	; 0xfc <__do_copy_data+0xc>
+ 106:	0e 94 89 00 	call	0x112	; 0x112 <main>
+ 10a:	0c 94 e1 00 	jmp	0x1c2	; 0x1c2 <_exit>
+
+0000010e <__bad_interrupt>:
+ 10e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000112 <main>:
+
+int main(void)
+{
+	char dutyCycle;
+	
+	uartInit();
+ 112:	0e 94 ba 00 	call	0x174	; 0x174 <uartInit>
+	println("*** QC-BLCD OS Startup Sequence ***");
+ 116:	80 e0       	ldi	r24, 0x00	; 0
+ 118:	92 e0       	ldi	r25, 0x02	; 2
+ 11a:	0e 94 cc 00 	call	0x198	; 0x198 <println>
+	println(" > UART initialized");
+ 11e:	84 e2       	ldi	r24, 0x24	; 36
+ 120:	92 e0       	ldi	r25, 0x02	; 2
+ 122:	0e 94 cc 00 	call	0x198	; 0x198 <println>
+	pwmInit();
+ 126:	0e 94 b0 00 	call	0x160	; 0x160 <pwmInit>
+	println(" > PWM initialized");
+ 12a:	88 e3       	ldi	r24, 0x38	; 56
+ 12c:	92 e0       	ldi	r25, 0x02	; 2
+ 12e:	0e 94 cc 00 	call	0x198	; 0x198 <println>
+
+	println("Startup Sequence successfull!");
+ 132:	8b e4       	ldi	r24, 0x4B	; 75
+ 134:	92 e0       	ldi	r25, 0x02	; 2
+ 136:	0e 94 cc 00 	call	0x198	; 0x198 <println>
+	println("Main program starts now");
+ 13a:	89 e6       	ldi	r24, 0x69	; 105
+ 13c:	92 e0       	ldi	r25, 0x02	; 2
+ 13e:	0e 94 cc 00 	call	0x198	; 0x198 <println>
+	
+	dutyCycle=0;
+ 142:	c0 e0       	ldi	r28, 0x00	; 0
+	
+
+    while(42) {                       
+               /*itoa(dutyCycle,msg,10);
+			   println(msg);*/
+			   setDutyCycle(dutyCycle);
+ 144:	8c 2f       	mov	r24, r28
+ 146:	0e 94 b8 00 	call	0x170	; 0x170 <setDutyCycle>
+			   dutyCycle++;
+ 14a:	cf 5f       	subi	r28, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 14c:	2f ef       	ldi	r18, 0xFF	; 255
+ 14e:	83 ec       	ldi	r24, 0xC3	; 195
+ 150:	99 e0       	ldi	r25, 0x09	; 9
+ 152:	21 50       	subi	r18, 0x01	; 1
+ 154:	80 40       	sbci	r24, 0x00	; 0
+ 156:	90 40       	sbci	r25, 0x00	; 0
+ 158:	e1 f7       	brne	.-8      	; 0x152 <main+0x40>
+ 15a:	00 c0       	rjmp	.+0      	; 0x15c <main+0x4a>
+ 15c:	00 00       	nop
+ 15e:	f2 cf       	rjmp	.-28     	; 0x144 <main+0x32>
+
+00000160 <pwmInit>:
+ */ 
+
+#include <avr/io.h>
+
+void pwmInit(void){
+	DDRB = 0xFF;                      // Set Port PB1 and PB2 as Output
+ 160:	8f ef       	ldi	r24, 0xFF	; 255
+ 162:	84 b9       	out	0x04, r24	; 4
+	PORTB=0;
+ 164:	15 b8       	out	0x05, r1	; 5
+	
+	TCCR0A = (1<<WGM01)|(1<<WGM00)|(1<<COM0A1)   // Set up the two Control registers of Timer1.
+ 166:	83 ea       	ldi	r24, 0xA3	; 163
+ 168:	84 bd       	out	0x24, r24	; 36
+	|(1<<COM1B1);             // Wave Form Generation is Fast PWM 8 Bit,
+	TCCR0B = (1<<CS02)     // OC1A and OC1B are cleared on compare match
+ 16a:	85 e0       	ldi	r24, 0x05	; 5
+ 16c:	85 bd       	out	0x25, r24	; 37
+ 16e:	08 95       	ret
+
+00000170 <setDutyCycle>:
+	|(1<<CS00);               // and set at BOTTOM. Clock Prescaler is 1024.
+}
+
+void setDutyCycle ( char rate) {
+	OCR0A = rate;
+ 170:	87 bd       	out	0x27, r24	; 39
+ 172:	08 95       	ret
+
+00000174 <uartInit>:
+#include <avr\io.h>
+#include "uart.h"
+//----------------------------------------------------------------------
+void uartInit(void)
+{
+	UBRR0L = 103; //9600Baud siehe Baudratentabelle
+ 174:	87 e6       	ldi	r24, 0x67	; 103
+ 176:	80 93 c4 00 	sts	0x00C4, r24
+	UCSR0B = (1<<RXEN0)|(1<<TXEN0); //Sender enable UCSRB / UCR bei z.B.: 2313
+ 17a:	88 e1       	ldi	r24, 0x18	; 24
+ 17c:	80 93 c1 00 	sts	0x00C1, r24
+	UCSR0C = (1<<USBS0)|(3<<UCSZ00);
+ 180:	8e e0       	ldi	r24, 0x0E	; 14
+ 182:	80 93 c2 00 	sts	0x00C2, r24
+ 186:	08 95       	ret
+
+00000188 <uartPutChar>:
+}
+//----------------------------------------------------------------------
+void uartPutChar(char data)
+{
+	//warte bis UDR leer ist UCSR0A / USR bei z.B.: 2313
+	while (!(UCSR0A& (1<<UDRE0)));
+ 188:	e0 ec       	ldi	r30, 0xC0	; 192
+ 18a:	f0 e0       	ldi	r31, 0x00	; 0
+ 18c:	90 81       	ld	r25, Z
+ 18e:	95 ff       	sbrs	r25, 5
+ 190:	fd cf       	rjmp	.-6      	; 0x18c <uartPutChar+0x4>
+	//sende
+	UDR0=data;
+ 192:	80 93 c6 00 	sts	0x00C6, r24
+ 196:	08 95       	ret
+
+00000198 <println>:
+	for (int i=0;buffer[i]!=0;i++)
+	uartPutChar(buffer[i]);
+}
+//======================================================================
+void println(char buffer[])
+{
+ 198:	cf 93       	push	r28
+ 19a:	df 93       	push	r29
+ 19c:	ec 01       	movw	r28, r24
+	for (int i=0;buffer[i]!=0;i++)
+ 19e:	88 81       	ld	r24, Y
+ 1a0:	88 23       	and	r24, r24
+ 1a2:	31 f0       	breq	.+12     	; 0x1b0 <println+0x18>
+ 1a4:	21 96       	adiw	r28, 0x01	; 1
+	uartPutChar(buffer[i]);
+ 1a6:	0e 94 c4 00 	call	0x188	; 0x188 <uartPutChar>
+	uartPutChar(buffer[i]);
+}
+//======================================================================
+void println(char buffer[])
+{
+	for (int i=0;buffer[i]!=0;i++)
+ 1aa:	89 91       	ld	r24, Y+
+ 1ac:	81 11       	cpse	r24, r1
+ 1ae:	fb cf       	rjmp	.-10     	; 0x1a6 <println+0xe>
+	uartPutChar(buffer[i]);
+	uartPutChar(0x0D);
+ 1b0:	8d e0       	ldi	r24, 0x0D	; 13
+ 1b2:	0e 94 c4 00 	call	0x188	; 0x188 <uartPutChar>
+	uartPutChar(0x0A);
+ 1b6:	8a e0       	ldi	r24, 0x0A	; 10
+ 1b8:	0e 94 c4 00 	call	0x188	; 0x188 <uartPutChar>
+ 1bc:	df 91       	pop	r29
+ 1be:	cf 91       	pop	r28
+ 1c0:	08 95       	ret
+
+000001c2 <_exit>:
+ 1c2:	f8 94       	cli
+
+000001c4 <__stop_program>:
+ 1c4:	ff cf       	rjmp	.-2      	; 0x1c4 <__stop_program>
