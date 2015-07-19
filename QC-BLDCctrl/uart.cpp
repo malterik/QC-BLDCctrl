@@ -7,7 +7,7 @@
 #include <avr\io.h>
 #include "uart.hpp"
 //----------------------------------------------------------------------
-void UART::uartInit(void)
+void UART::init(void)
 {
 	UBRR0L = 103; //9600Baud siehe Baudratentabelle
 	UCSR0B = (1<<RXEN0)|(1<<TXEN0); //Sender enable UCSRB / UCR bei z.B.: 2313

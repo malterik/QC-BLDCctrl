@@ -15,10 +15,10 @@ int main(void)
 	char dutyCycle;
 	UART uart;
 	PWM pwm;
-	uart.uartInit();
+	uart.init();
 	uart.println("*** QC-BLCD OS Startup Sequence ***");
 	uart.println(" > UART initialized");
-	pwm.pwmInit();
+	pwm.init();
 	uart.println(" > PWM initialized");
 
 	uart.println("Startup Sequence successfull!");

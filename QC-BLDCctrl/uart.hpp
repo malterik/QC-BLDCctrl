@@ -11,7 +11,7 @@
 
 class UART {
 public:
-	void uartInit(void);
+	void init(void);
 	void uartPutChar(char data);
 	void print(char buffer[]);
 	void println(char buffer[]);
